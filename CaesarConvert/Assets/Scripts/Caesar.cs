@@ -1,22 +1,20 @@
-using System.Collections;
-using System.Collections.Generic;
+using Unity.Collections.LowLevel.Unsafe;
 using UnityEngine;
 
 public class Caesar : MonoBehaviour
 {
     public static Caesar Instance;
+    private string alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
     private void Awake()
     {
-        Instance = this;
+        if (Instance == null) { Instance = this; }
+        else Destroy(this);
     }
 
-    public string Encrypt(string text, int keyValue)
+    public string Encrypt(string input, int key)
     {
-        string alphabet = "ABCDEFGHIJKLMNÑOPQRSTUVWXYZ";
-        int alphabetLenght = alphabet.Length;
-
-        char[] originalCharacters = text.ToUpper().ToCharArray();
+        char[] originalCharacters = input.ToCharArray();
         char[] ciphedCharacters = new char[originalCharacters.Length];
 
         for (int i = 0; i < originalCharacters.Length; i++)
@@ -25,19 +23,25 @@ public class Caesar : MonoBehaviour
 
             if (char.IsLetter(originalChar))
             {
-                int originalIndex = alphabet.IndexOf(originalChar);
+                // Diferenciar entre Upper y Lower
+                string actualLetter = char.IsUpper(originalChar) ? alphabet : alphabet.ToLower();
 
-                // Aplicar el desplazamiento y manejar el desbordamiento
-                int ciphedIndex = (originalIndex + keyValue) % alphabetLenght;
+                int originalIndex = actualLetter.IndexOf(originalChar);
 
-                if (ciphedIndex < 0) ciphedIndex += alphabetLenght;
+                int ciphedIndex = (originalIndex + key) % alphabet.Length;      // Aplicar el desplazamiento y manejar el desbordamiento
 
-                ciphedCharacters[i] = alphabet[ciphedIndex];
+                if (ciphedIndex < 0) ciphedIndex += alphabet.Length;
+
+                ciphedCharacters[i] = actualLetter[ciphedIndex];
             }
-            else ciphedCharacters[i] = originalChar;
+            else ciphedCharacters[i] = originalChar;    // Mantener caracteres no alfabéticos sin cambios
         }
+
         return new string(ciphedCharacters);
     }
 
-    public string Decrypt(string ciphedText, int keyValue) { return Encrypt(ciphedText, -keyValue); }
+    public string Decrypt(string input, int key) 
+    {
+        return Encrypt(input, -key);
+    }
 }

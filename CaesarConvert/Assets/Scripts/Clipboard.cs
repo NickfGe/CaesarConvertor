@@ -1,30 +1,28 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
-using System;
 using UnityEngine.UI;
 
-public class CipherManager : MonoBehaviour
+public class Clipboard : MonoBehaviour
 {
+    public static Clipboard Instance;
     public InputField input;
-    public InputField key;
     public InputField output;
 
-    public void Cipher()
+    private void Awake()
     {
-        output.text = Caesar.Instance.Encrypt(input.text, Convert.ToInt32(key));
-    }
-
-    public void Uncipher()
-    {
-        output.text = Caesar.Instance.Decrypt(input.text, Convert.ToInt32(key));
+        if (Instance == null) { Instance = this; }
+        else Destroy(this);
     }
 
     public void Copy()
     {
         TextEditor textEditor = new TextEditor();
-        textEditor.text = input.text;
+        textEditor.text = output.text;
         textEditor.SelectAll();
         textEditor.Copy();
     }
+
     public void Paste()
     {
         TextEditor textEditor = new TextEditor();
