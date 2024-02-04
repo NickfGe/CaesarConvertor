@@ -708,7 +708,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: bbd9c68427a8e3c49a351a827dc22723, type: 3}
+  m_Texture: {fileID: 2800000, guid: 6cfd8587bbf7f75499009b4cc3cd039b, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -1049,7 +1049,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 9eed57c6914c6474d8bc4c4ca36e8ec2, type: 3}
+  m_Texture: {fileID: 2800000, guid: 6cfd8587bbf7f75499009b4cc3cd039b, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -1134,7 +1134,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Pegar
+  m_Text: Paste
 --- !u!222 &845528763
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1260,7 +1260,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Volver
+  m_Text: Back
 --- !u!222 &1037393915
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1339,7 +1339,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Copiar
+  m_Text: Copy
 --- !u!222 &1068054685
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1708,7 +1708,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 9eed57c6914c6474d8bc4c4ca36e8ec2, type: 3}
+  m_Texture: {fileID: 2800000, guid: 6cfd8587bbf7f75499009b4cc3cd039b, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -1777,7 +1777,7 @@ GameObject:
   - component: {fileID: 1227122371}
   - component: {fileID: 1227122370}
   m_Layer: 5
-  m_Name: Subtitle II (1)
+  m_Name: Subtitle III
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1799,7 +1799,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -112, y: -136.5}
+  m_AnchoredPosition: {x: -133.4, y: -129.40002}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1227122370
@@ -1829,13 +1829,13 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Texto encriptado
+  m_Text: Encrypted Text
 --- !u!222 &1227122371
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2024,7 +2024,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -112, y: 114}
+  m_AnchoredPosition: {x: -133.4, y: 121.099976}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1383845627
@@ -2054,13 +2054,13 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Clave de cifrado
+  m_Text: CIpher Key
 --- !u!222 &1383845628
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2171,7 +2171,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: bbd9c68427a8e3c49a351a827dc22723, type: 3}
+  m_Texture: {fileID: 2800000, guid: 6cfd8587bbf7f75499009b4cc3cd039b, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -2531,7 +2531,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -112, y: 237}
+  m_AnchoredPosition: {x: -133.4, y: 244.1}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1730785753
@@ -2561,13 +2561,13 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Texto a encriptar
+  m_Text: Text to encrypt
 --- !u!222 &1730785754
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2756,7 +2756,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Encriptar
+  m_Text: Encrypt
 --- !u!222 &2111537810
 CanvasRenderer:
   m_ObjectHideFlags: 0
